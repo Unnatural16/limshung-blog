@@ -1,0 +1,1 @@
+export { default } from "C:\\Users\\VULCAN\\source\\repos\\blog-back\\node_modules\\@vuepress\\plugin-blog\\lib\\client\\pagination.js"
