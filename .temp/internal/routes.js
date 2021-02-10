@@ -4,16 +4,16 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "C:\\Users\\VULCAN\\source\\repos\\blog-back\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
+import GlobalLayout from "C:\\Users\\VULCAN\\source\\repos\\limshung-blog\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-2f6ab9b0",
+    name: "v-cfebf258",
     path: "/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2f6ab9b0").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-cfebf258").then(next)
     },
   },
   {
@@ -21,27 +21,19 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-26f10b30",
-    path: "/blogs/blog/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96.html",
+    name: "v-fcfa9c8a",
+    path: "/blogs/blog/blog-init.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-26f10b30").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-fcfa9c8a").then(next)
     },
   },
   {
-    path: "/blogs/blog/博客初始化.html",
-    redirect: "/blogs/blog/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96.html"
-  },
-  {
-    path: "/blogs/blog/博客初始化.html",
-    redirect: "/blogs/blog/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96.html"
-  },
-  {
-    name: "v-986b61b0",
+    name: "v-308b2ad4",
     path: "/docs/iview-comment-tree/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-986b61b0").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-308b2ad4").then(next)
     },
   },
   {

@@ -38,8 +38,9 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "README.md",
-      "key": "v-2f6ab9b0",
-      "path": "/"
+      "key": "v-cfebf258",
+      "path": "/",
+      "lastUpdated": "2021-2-9 6:24:32 ├F10: PM┤"
     },
     {
       "title": "博客初始化",
@@ -53,10 +54,10 @@ export const siteData = {
           "前端"
         ]
       },
-      "regularPath": "/blogs/blog/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96.html",
-      "relativePath": "blogs/blog/博客初始化.md",
-      "key": "v-26f10b30",
-      "path": "/blogs/blog/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96.html",
+      "regularPath": "/blogs/blog/blog-init.html",
+      "relativePath": "blogs/blog/blog-init.md",
+      "key": "v-fcfa9c8a",
+      "path": "/blogs/blog/blog-init.html",
       "headers": [
         {
           "level": 2,
@@ -67,6 +68,26 @@ export const siteData = {
           "level": 2,
           "title": "将来目标",
           "slug": "将来目标"
+        },
+        {
+          "level": 2,
+          "title": "博客注意点",
+          "slug": "博客注意点"
+        },
+        {
+          "level": 3,
+          "title": "最后更新时间",
+          "slug": "最后更新时间"
+        },
+        {
+          "level": 3,
+          "title": "中文路径",
+          "slug": "中文路径"
+        },
+        {
+          "level": 3,
+          "title": "显示时间",
+          "slug": "显示时间"
         }
       ]
     },
@@ -74,12 +95,13 @@ export const siteData = {
       "title": "iview-comment-tree文档",
       "frontmatter": {
         "title": "iview-comment-tree文档",
-        "date": "2021/2/9"
+        "date": "2021/2/9 18:18:30"
       },
       "regularPath": "/docs/iview-comment-tree/",
       "relativePath": "docs/iview-comment-tree/README.md",
-      "key": "v-986b61b0",
-      "path": "/docs/iview-comment-tree/"
+      "key": "v-308b2ad4",
+      "path": "/docs/iview-comment-tree/",
+      "lastUpdated": "2021-2-9 6:24:32 ├F10: PM┤"
     },
     {
       "frontmatter": {
@@ -166,7 +188,7 @@ export const siteData = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "博客"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
@@ -183,6 +205,7 @@ export const siteData = {
     ],
     "search": true,
     "searchMaxSuggestions": 10,
+    "lastUpdated": "最后更新时间",
     "author": "limshung",
     "authorAvatar": "/avatar.png",
     "record": "粤ICP备2020102443号-1",

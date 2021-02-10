@@ -8,7 +8,7 @@ export default {
       "scope": "tags",
       "path": "/tag/前端/",
       "pageKeys": [
-        "v-26f10b30"
+        "v-fcfa9c8a"
       ]
     }
   },
@@ -18,7 +18,7 @@ export default {
       "scope": "categories",
       "path": "/categories/博客/",
       "pageKeys": [
-        "v-26f10b30"
+        "v-fcfa9c8a"
       ]
     }
   },

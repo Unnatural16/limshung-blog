@@ -20,7 +20,6 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
-    lastUpdated:'最后更新时间',
     "nav": [
       {
         "text": "主页",
@@ -66,7 +65,7 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "博客"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
