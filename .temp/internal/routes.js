@@ -21,14 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-fcfa9c8a",
-    path: "/blogs/blog/blog-init.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-fcfa9c8a").then(next)
-    },
-  },
-  {
     name: "v-308b2ad4",
     path: "/docs/iview-comment-tree/",
     component: GlobalLayout,
@@ -39,6 +31,26 @@ export const routes = [
   {
     path: "/docs/iview-comment-tree/index.html",
     redirect: "/docs/iview-comment-tree/"
+  },
+  {
+    name: "v-fcfa9c8a",
+    path: "/blogs/blog/blog-init.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-fcfa9c8a").then(next)
+    },
+  },
+  {
+    name: "v-1f69be38",
+    path: "/blogs/leetcook/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1f69be38").then(next)
+    },
+  },
+  {
+    path: "/blogs/leetcook/index.html",
+    redirect: "/blogs/leetcook/"
   },
   {
     name: "v-b1564aac",
@@ -93,6 +105,19 @@ export const routes = [
     redirect: "/tag/前端/"
   },
   {
+    name: "v-18535602",
+    path: "/tag/front-end/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-18535602").then(next)
+    },
+    meta: {"pid":"tags","id":"front-end"}
+  },
+  {
+    path: "/tag/front-end/index.html",
+    redirect: "/tag/front-end/"
+  },
+  {
     name: "v-42aee080",
     path: "/categories/博客/",
     component: GlobalLayout,
@@ -104,6 +129,19 @@ export const routes = [
   {
     path: "/categories/博客/index.html",
     redirect: "/categories/博客/"
+  },
+  {
+    name: "v-39ba213e",
+    path: "/categories/LeetCook/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Category", "v-39ba213e").then(next)
+    },
+    meta: {"pid":"categories","id":"LeetCook"}
+  },
+  {
+    path: "/categories/LeetCook/index.html",
+    redirect: "/categories/LeetCook/"
   },
   {
     path: '*',

@@ -2,9 +2,9 @@
 date: 2021/2/9 
 title: 博客初始化
 categories:
- - 博客
+ - blog
 tags:
- - 前端
+ - front-end
 ---
 
 ## 博客转移

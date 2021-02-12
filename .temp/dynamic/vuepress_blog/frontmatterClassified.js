@@ -10,6 +10,14 @@ export default {
       "pageKeys": [
         "v-fcfa9c8a"
       ]
+    },
+    "front-end": {
+      "key": "front-end",
+      "scope": "tags",
+      "path": "/tag/front-end/",
+      "pageKeys": [
+        "v-1f69be38"
+      ]
     }
   },
   "categories": {
@@ -19,6 +27,14 @@ export default {
       "path": "/categories/博客/",
       "pageKeys": [
         "v-fcfa9c8a"
+      ]
+    },
+    "LeetCook": {
+      "key": "LeetCook",
+      "scope": "categories",
+      "path": "/categories/LeetCook/",
+      "pageKeys": [
+        "v-1f69be38"
       ]
     }
   },
