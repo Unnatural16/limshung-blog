@@ -18,6 +18,7 @@ class Heap {
     constructor(data = []) {
         this.data = data;
         this.comparator = (a, b) => a - b;//对比方式，此种方式为小顶堆
+        
         this.heapify();
     }
 
