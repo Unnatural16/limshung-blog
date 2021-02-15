@@ -3,12 +3,28 @@
  */
 export default {
   "tags": {
-    "前端": {
-      "key": "前端",
+    "heap": {
+      "key": "heap",
       "scope": "tags",
-      "path": "/tag/前端/",
+      "path": "/tag/heap/",
       "pageKeys": [
-        "v-fcfa9c8a"
+        "v-8bfd3d66"
+      ]
+    },
+    "priority-queue": {
+      "key": "priority-queue",
+      "scope": "tags",
+      "path": "/tag/priority-queue/",
+      "pageKeys": [
+        "v-8bfd3d66"
+      ]
+    },
+    "array": {
+      "key": "array",
+      "scope": "tags",
+      "path": "/tag/array/",
+      "pageKeys": [
+        "v-8bfd3d66"
       ]
     },
     "front-end": {
@@ -16,17 +32,35 @@ export default {
       "scope": "tags",
       "path": "/tag/front-end/",
       "pageKeys": [
-        "v-1f69be38"
+        "v-1f69be38",
+        "v-fcfa9c8a"
+      ]
+    },
+    "union-find": {
+      "key": "union-find",
+      "scope": "tags",
+      "path": "/tag/union-find/",
+      "pageKeys": [
+        "v-6983bd22"
+      ]
+    },
+    "graph": {
+      "key": "graph",
+      "scope": "tags",
+      "path": "/tag/graph/",
+      "pageKeys": [
+        "v-6983bd22"
       ]
     }
   },
   "categories": {
-    "博客": {
-      "key": "博客",
+    "algorithm": {
+      "key": "algorithm",
       "scope": "categories",
-      "path": "/categories/博客/",
+      "path": "/categories/algorithm/",
       "pageKeys": [
-        "v-fcfa9c8a"
+        "v-8bfd3d66",
+        "v-6983bd22"
       ]
     },
     "LeetCook": {
@@ -35,6 +69,14 @@ export default {
       "path": "/categories/LeetCook/",
       "pageKeys": [
         "v-1f69be38"
+      ]
+    },
+    "blog": {
+      "key": "blog",
+      "scope": "categories",
+      "path": "/categories/blog/",
+      "pageKeys": [
+        "v-fcfa9c8a"
       ]
     }
   },

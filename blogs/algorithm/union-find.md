@@ -4,8 +4,8 @@ date: 2021/2/12
 categories:
  - algorithm
 tags:
- - 并查集
- - 图论
+ - union-find
+ - graph
 ---
 
 ## 并查集是一种合并关系的数据结构，在图论等算法中起到重要作用

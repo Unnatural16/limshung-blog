@@ -4,9 +4,9 @@ date: 2021/2/12
 categories:
  - algorithm
 tags:
- - 堆
- - 优先队列
- - 数组
+ - heap
+ - priority-queue
+ - array
 ---
 
 ## 介绍

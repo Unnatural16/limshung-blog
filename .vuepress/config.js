@@ -96,5 +96,4 @@ module.exports = {
   "markdown": {
     "lineNumbers": true
   },
-  plugins: ['@vuepress/medium-zoom']
 }

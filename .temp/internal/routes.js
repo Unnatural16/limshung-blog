@@ -21,6 +21,34 @@ export const routes = [
     redirect: "/"
   },
   {
+    name: "v-8bfd3d66",
+    path: "/blogs/algorithm/priority-queue-heap.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-8bfd3d66").then(next)
+    },
+  },
+  {
+    name: "v-1f69be38",
+    path: "/blogs/leetcook/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1f69be38").then(next)
+    },
+  },
+  {
+    path: "/blogs/leetcook/index.html",
+    redirect: "/blogs/leetcook/"
+  },
+  {
+    name: "v-6983bd22",
+    path: "/blogs/algorithm/union-find.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6983bd22").then(next)
+    },
+  },
+  {
     name: "v-308b2ad4",
     path: "/docs/iview-comment-tree/",
     component: GlobalLayout,
@@ -39,18 +67,6 @@ export const routes = [
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-fcfa9c8a").then(next)
     },
-  },
-  {
-    name: "v-1f69be38",
-    path: "/blogs/leetcook/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1f69be38").then(next)
-    },
-  },
-  {
-    path: "/blogs/leetcook/index.html",
-    redirect: "/blogs/leetcook/"
   },
   {
     name: "v-b1564aac",
@@ -92,17 +108,43 @@ export const routes = [
     redirect: "/timeline/"
   },
   {
-    name: "v-49a56e2a",
-    path: "/tag/前端/",
+    name: "v-14b7a14e",
+    path: "/tag/heap/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-49a56e2a").then(next)
+      ensureAsyncComponentsLoaded("Tag", "v-14b7a14e").then(next)
     },
-    meta: {"pid":"tags","id":"前端"}
+    meta: {"pid":"tags","id":"heap"}
   },
   {
-    path: "/tag/前端/index.html",
-    redirect: "/tag/前端/"
+    path: "/tag/heap/index.html",
+    redirect: "/tag/heap/"
+  },
+  {
+    name: "v-32d3d59d",
+    path: "/tag/priority-queue/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-32d3d59d").then(next)
+    },
+    meta: {"pid":"tags","id":"priority-queue"}
+  },
+  {
+    path: "/tag/priority-queue/index.html",
+    redirect: "/tag/priority-queue/"
+  },
+  {
+    name: "v-98a2e7c0",
+    path: "/tag/array/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-98a2e7c0").then(next)
+    },
+    meta: {"pid":"tags","id":"array"}
+  },
+  {
+    path: "/tag/array/index.html",
+    redirect: "/tag/array/"
   },
   {
     name: "v-18535602",
@@ -118,17 +160,43 @@ export const routes = [
     redirect: "/tag/front-end/"
   },
   {
-    name: "v-42aee080",
-    path: "/categories/博客/",
+    name: "v-e97567a4",
+    path: "/tag/union-find/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Category", "v-42aee080").then(next)
+      ensureAsyncComponentsLoaded("Tag", "v-e97567a4").then(next)
     },
-    meta: {"pid":"categories","id":"博客"}
+    meta: {"pid":"tags","id":"union-find"}
   },
   {
-    path: "/categories/博客/index.html",
-    redirect: "/categories/博客/"
+    path: "/tag/union-find/index.html",
+    redirect: "/tag/union-find/"
+  },
+  {
+    name: "v-8437c86a",
+    path: "/tag/graph/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-8437c86a").then(next)
+    },
+    meta: {"pid":"tags","id":"graph"}
+  },
+  {
+    path: "/tag/graph/index.html",
+    redirect: "/tag/graph/"
+  },
+  {
+    name: "v-9f760d84",
+    path: "/categories/algorithm/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Category", "v-9f760d84").then(next)
+    },
+    meta: {"pid":"categories","id":"algorithm"}
+  },
+  {
+    path: "/categories/algorithm/index.html",
+    redirect: "/categories/algorithm/"
   },
   {
     name: "v-39ba213e",
@@ -142,6 +210,19 @@ export const routes = [
   {
     path: "/categories/LeetCook/index.html",
     redirect: "/categories/LeetCook/"
+  },
+  {
+    name: "v-628eda6f",
+    path: "/categories/blog/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Category", "v-628eda6f").then(next)
+    },
+    meta: {"pid":"categories","id":"blog"}
+  },
+  {
+    path: "/categories/blog/index.html",
+    redirect: "/categories/blog/"
   },
   {
     path: '*',

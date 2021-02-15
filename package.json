@@ -7,10 +7,10 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
-    "@vuepress/plugin-medium-zoom": "^1.8.0",
+    "@vuepress/plugin-medium-zoom": "^1.8.1",
     "vuepress": "1.7.1",
     "vuepress-theme-reco": "1.6.1"
   },
   "description": "",
-  "license":"MIT"
+  "license": "MIT"
 }
