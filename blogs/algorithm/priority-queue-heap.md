@@ -2,101 +2,91 @@
 title: 优先队列-堆
 date: 2021/2/12
 categories:
- - algorithm
+ - 算法
 tags:
- - heap
- - priority-queue
- - array
+ - 堆
+ - 优先队列
 ---
 
 ## 介绍
 
-## 模板
+优先队列就是一种将数据赋予优先级的队列，优先级高的元素先出。
+
+优先队列有数组和树两种实现方法
+
+### 数组
+
+数组的实现比较简单，就是每次在输入或者输出时扫描全数组，输出优先级最大的数。这样的输入和输出至少有一个的时间复杂度是O(n),消耗较大。
+
+### 树
+
+使用树实现的话，将优先级的比较变为树的页关系，控制节点上浮下沉堆化，时间复杂度降至O(log2(n))
+
+### 堆
+
+为了节省空间，使用数组来模拟树，将一个完全二叉树映射到一个数组上，进一步节省空间。
+
+## 实现
+
+此示例使用了递归实现上浮下沉，更换成循环可更节省空间
 
 ```js
 class Heap {
-    constructor(data = []) {
-        this.data = data;
-        this.comparator = (a, b) => a - b;//对比方式，此种方式为小顶堆
-        
-        this.heapify();
+    constructor(arr, func) {
+        this.arr = arr || []
+        this.func = func || ((a, b) => a >= b)
+        this.compare = function (index, other) {
+            if (this.arr[other] == null) {
+                return true
+            } else {
+                return this.func(this.arr[index], this.arr[other])
+            }
+        }
+        this.heapify()
     }
-
+    push(n) {
+        this.arr.push(n)
+        this.upper(this.arr.length - 1)
+    }
+    pop() {
+        const arr = this.arr
+        this.swap(0, arr.length - 1)
+        const res = arr.pop()
+        this.down(0)
+        return res
+    }
     heapify() {
-        if (this.size() < 2) return;
-        for (let i = 1; i < this.size(); i++) {
-        this.bubbleUp(i);
+        for (let i = 1; i < this.arr.length; i++) {
+            this.upper(i)
         }
     }
-
-    peek() {
-        if (this.size() === 0) return null;
-        return this.data[0];
-    }
-
-    offer(value) {
-        this.data.push(value);
-        this.bubbleUp(this.size() - 1);
-    }
-
-    poll() {
-        if (this.size() === 0) {
-            return null;
-        }
-        const result = this.data[0];
-        const last = this.data.pop();
-        if (this.size() !== 0) {
-            this.data[0] = last;
-            this.bubbleDown(0);
-        }
-        return result;
-    }
-
-    bubbleUp(index) {
-        while (index > 0) {
-            const parentIndex = (index - 1) >> 1;
-            if (this.comparator(this.data[index], this.data[parentIndex]) < 0) {
-                this.swap(index, parentIndex);
-                index = parentIndex;
-            } else {
-                break;
-            }
+    upper(index) {
+        const up = Math.floor((index - 1) / 2)
+        if (up>=0&&this.compare(index, up)) {
+            this.swap(index, up)
+            this.upper(up)
         }
     }
-
-    bubbleDown(index) {
-        const lastIndex = this.size() - 1;
-        while (true) {
-            const leftIndex = index * 2 + 1;
-            const rightIndex = index * 2 + 2;
-            let findIndex = index;
-            if (
-                leftIndex <= lastIndex &&
-                this.comparator(this.data[leftIndex], this.data[findIndex]) < 0
-            ) {
-                findIndex = leftIndex;
-            }
-            if (
-                rightIndex <= lastIndex &&
-                this.comparator(this.data[rightIndex], this.data[findIndex]) < 0
-            ) {
-                findIndex = rightIndex;
-            }
-            if (index !== findIndex) {
-                this.swap(index, findIndex);
-                index = findIndex;
-            } else {
-                break;
-            }
+    down(index) {
+        const left = index * 2 + 1
+        const right = index * 2 + 2
+        const selected = this.compare(left, right) ? left : right
+        if (!this.compare(index, selected)) {
+            this.swap(selected, index)
+            this.down(selected)
         }
     }
-
-    swap(index1, index2) {
-        [this.data[index1], this.data[index2]] = [this.data[index2], this.data[index1]];
-    }
-
-    size() {
-        return this.data.length;
+    swap(i, j) {
+        const arr = this.arr;
+        [arr[i], arr[j]] = [arr[j], arr[i]]
     }
 }
+
+const heap=new Heap([1,4353,456,2,5634,56,45,2563,45,43,6,457,548,7,67,5])
+let res=[]
+while(heap.arr.length>0){
+    res.push(heap.pop())
+}
+console.log(res)
+//输出[5634, 4353, 2563, 548, 457, 456, 67, 56, 45, 45, 43, 7, 6, 5, 2, 1]
 ```

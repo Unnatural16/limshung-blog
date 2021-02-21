@@ -3,64 +3,73 @@
  */
 export default {
   "tags": {
-    "heap": {
-      "key": "heap",
+    "图": {
+      "key": "图",
       "scope": "tags",
-      "path": "/tag/heap/",
+      "path": "/tag/图/",
+      "pageKeys": [
+        "v-6983bd22"
+      ]
+    },
+    "并查集": {
+      "key": "并查集",
+      "scope": "tags",
+      "path": "/tag/并查集/",
+      "pageKeys": [
+        "v-6983bd22"
+      ]
+    },
+    "堆": {
+      "key": "堆",
+      "scope": "tags",
+      "path": "/tag/堆/",
       "pageKeys": [
         "v-8bfd3d66"
       ]
     },
-    "priority-queue": {
-      "key": "priority-queue",
+    "优先队列": {
+      "key": "优先队列",
       "scope": "tags",
-      "path": "/tag/priority-queue/",
+      "path": "/tag/优先队列/",
       "pageKeys": [
         "v-8bfd3d66"
       ]
     },
-    "array": {
-      "key": "array",
+    "前端": {
+      "key": "前端",
       "scope": "tags",
-      "path": "/tag/array/",
+      "path": "/tag/前端/",
       "pageKeys": [
-        "v-8bfd3d66"
-      ]
-    },
-    "front-end": {
-      "key": "front-end",
-      "scope": "tags",
-      "path": "/tag/front-end/",
-      "pageKeys": [
+        "v-fcfa9c8a",
         "v-1f69be38",
-        "v-fcfa9c8a"
+        "v-4bc0f832"
       ]
     },
-    "union-find": {
-      "key": "union-find",
+    "vue3": {
+      "key": "vue3",
       "scope": "tags",
-      "path": "/tag/union-find/",
+      "path": "/tag/vue3/",
       "pageKeys": [
-        "v-6983bd22"
-      ]
-    },
-    "graph": {
-      "key": "graph",
-      "scope": "tags",
-      "path": "/tag/graph/",
-      "pageKeys": [
-        "v-6983bd22"
+        "v-4bc0f832"
       ]
     }
   },
   "categories": {
-    "algorithm": {
-      "key": "algorithm",
+    "算法": {
+      "key": "算法",
       "scope": "categories",
-      "path": "/categories/algorithm/",
+      "path": "/categories/算法/",
       "pageKeys": [
-        "v-8bfd3d66",
-        "v-6983bd22"
+        "v-6983bd22",
+        "v-8bfd3d66"
+      ]
+    },
+    "博客": {
+      "key": "博客",
+      "scope": "categories",
+      "path": "/categories/博客/",
+      "pageKeys": [
+        "v-fcfa9c8a"
       ]
     },
     "LeetCook": {
@@ -71,12 +80,12 @@ export default {
         "v-1f69be38"
       ]
     },
-    "blog": {
-      "key": "blog",
+    "学习笔记": {
+      "key": "学习笔记",
       "scope": "categories",
-      "path": "/categories/blog/",
+      "path": "/categories/学习笔记/",
       "pageKeys": [
-        "v-fcfa9c8a"
+        "v-4bc0f832"
       ]
     }
   },

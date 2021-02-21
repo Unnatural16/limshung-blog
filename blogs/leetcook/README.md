@@ -4,13 +4,15 @@ title: LeetCook项目
 categories:
  - LeetCook
 tags:
- - front-end
+ - 前端
 ---
 
 ## 介绍
 
 LeetCook是我在自学前端过程中检验自己能力并综合学习的第一个项目，灵感来源于LeetCode，功能还算齐全，大体能用。
+
 为什么选择LeetCode进行模仿？因为这个网站在学习编程入门的过程中用得最多，写着很熟悉，整体布局比较简单，适合新手。
+
 各位无聊的话不妨来玩一玩，当然因为网站可能还是会有安全问题，注册账号时就不要用自己常用的账户名和密码啦。
 
 [仓库源码](https://github.com/Unnatural16/LeetCook)，[点此访问](http://leetcook.limshung.site/)
