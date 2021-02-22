@@ -54,12 +54,11 @@ module.exports = {
       }
     ],
     "sidebar": {
-      // "/docs/theme-reco/": [
-      //   "",
-      //   "theme",
-      //   "plugin",
-      //   "api"
-      // ]
+      "/docs/iview-comment-tree/": [
+        "",
+        "development",
+        {rext:"demo",link:""},
+      ]
     },
     "type": "blog",
     "blogConfig": {
