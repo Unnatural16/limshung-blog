@@ -57,7 +57,7 @@ module.exports = {
       "/docs/iview-comment-tree/": [
         "",
         "development",
-        {rext:"demo",link:""},
+        "demo",
       ]
     },
     "type": "blog",

@@ -87,6 +87,8 @@ export default {
 
 或者本地运行`npm run serve`
 
+或者查看[线上示例](https://unnatural16.github.io/iview-comment-tree/)
+
 ## LICENSE
 
 [MIT](https://github.com/Unnatural16/iview-comment-tree/blob/master/LICENSE)
